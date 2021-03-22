@@ -22,6 +22,8 @@ var products = [
   }
 ];
 
+var elements = [];
+
 // DO NOT EDIT THE ARRAY TO COMPLETE THE ASSIGNMENT
 
 // Create a div and give it a class of "popUp". Append that div to the body 
@@ -115,7 +117,7 @@ function poppingUp(fruit){
 
 function start(){
   for (var i=0; i<products.length; i++){
-    produce(products[i])
+    elements.push( new produce(products[i]))
   }
 }
 
